@@ -1,7 +1,7 @@
 'use strict';
 
 const onSuccess = function (data) {
-//  debugger;
+  //  debugger;
   if (data.book) {
     console.log(data.book);
   } else {
@@ -17,8 +17,13 @@ const onDeleteSuccess = function () {
   console.log('Book was successfully deleted.');
 };
 
+const onPatchSuccess = function () {
+  console.log('Book was successfully patched.');
+};
+
 module.exports = {
   onSuccess,
   onError,
   onDeleteSuccess,
+  onPatchSuccess,
 };
